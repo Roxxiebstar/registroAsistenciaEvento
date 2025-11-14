@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+  <title>Registro maranatha</title>
+
+  <!-- 1. Enlace al archivo CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <h1>Registro de asistencia <span class="cursiva">maranatha</span> 2025</h1>
+
+  <h3>los cuales también les dijeron: Varones galileos, ¿por qué estáis mirando al cielo? <br> 
+    Este mismo Jesús, que ha sido tomado de vosotros al cielo, así vendrá como le habéis <br>
+     visto ir al cielo.</h3>
+
+     
+  <h3>Hechos 1: 11</h3>
+
+  <!-- FORMULARIO-->
+<div class="card">
+
+    <input id="nombre" type="text" placeholder="Escribe tu nombre">
+
+    <input id="correo" type="email" placeholder="Escribe tu correo electrónico">
+    
+    <h2>¿Confirmas tú asistencia?</h2>
+
+<label>
+  <input id="noPuedo" type="radio" name="asistencia" value="no">
+  No
+</label>
+
+<label>
+  <input id="siPuedo" type="radio" name="asistencia" value="si">
+  Sí
+</label>
+    <button id="btnRegistrar">Registrar</button>
+  <!-- Tabla registros -->
+</div>
+<table id="tablaRegistros">
+    <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Asistencia</th>
+    </tr>
+</table>
+    <!-- Tabla resultados -->
+
+<table id="resultados">
+    <tr>
+        <th>Asistirán</th>
+        <th>No asistirán</th>
+    </tr>
+    <tr>
+        <td id="contadorSi">0</td>
+        <td id="contadorNo">0</td>
+    </tr>
+</table>
+</table>
+  <!-- 2. Enlazar archivo JavaScript -->
+  <script src="js/appRegister.js"></script>
+</body>
+</html>
